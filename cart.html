@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta tags for cartpage-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRINTER OF DIFFERENT KINDS | PRINTHUB ® OFFICIAL SITE</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!--CSS design for cartpage-->
+<style>
+  html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  #pageTitle {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    font-size: 28px;
+  }
+
+  form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    transition: box-shadow 0.3s;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background: #333;
+    margin-top: 8px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  input:hover,
+  select:hover,
+  textarea:hover,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #555;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px;
+  }
+
+  input[type="radio"]:checked {
+    background-color: #333;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 5px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  button {
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #86ed94;
+  }
+
+  button:hover {
+    background: #86ed94;
+  }
+
+  div[id^="step"] {
+    margin: 20px 0;
+  }
+
+  div[id^="step"]:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  table {
+    margin-bottom: 15px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  th {
+    background: #f0f0f0;
+  }
+
+  form button[type="submit"] {
+    background: #86ed94;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  form button[type="submit"]:hover {
+    background: #86ed94;
+  }
+
+  #review-purchase,
+  #purchase-button {
+    background: #ff6f61;
+    color: #fff;
+  }
+
+  #review-purchase:hover,
+  #purchase-button:hover {
+    background: #d63638;
+  }
+</style>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="./images/logoicon.jpg" class="logo"></a>
+
+    <header class="head">
+      <b>
+        <h1>WELCOME TO PRINTHUB</h1>
+      </b>
+      <p>"QUALITY FIRST, CUSTOMER ALWAYS"</p>
+    </header>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="explore.html">EXPLORE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="research.html">RESEARCH </a></li>
+        <li><a class="active" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <h1 id="pageTitle">PrintPick: Choose Your Ideal Printer</h1>
+  <form id="printer-form" onsubmit="return validateStep(currentStep)">
+    <!-- Step 1 - User Details -->
+    <div id="step-1">
+      <h2>Step 1: Your Details</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email">
+
+      <label for="address">Address:</label>
+      <textarea id="address"></textarea>
+
+      <button type="button" onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 2 - Select Printer Model -->
+    <div id="step-2" style="display: none">
+      <h2>Step 2: Select Printer Model</h2>
+
+      <select id="printer-model">
+        <option value="">Select model...</option>
+
+        <!-- Inkjet Models -->
+        <optgroup label="Inkjet Printers">
+          <option>HP envy 5020</option>
+          <option>HP deskjet 2130</option>
+          <option>Epson ECOTANK PRO ET-5850</option>
+          <option>Hp Officejet PRO 8025e</option>
+        </optgroup>
+
+        <!-- Laser Models -->
+        <optgroup label="Laser Printers">
+          <option>HP Color LASERJET PRO MFP M283fdw</option>
+          <option>Brother HL-L2350DW</option>
+          <option>Brother MFC-L2750DW</option>
+          <option>HP Color LASERJET PRO MFP M479fdw</option>
+        </optgroup>
+
+        <!-- All-in-One Models -->
+        <optgroup label="All-in-One Printers">
+          <option>HP OFFICEJET PRO 9015e</option>
+          <option>Brother MFC-J4335DW</option>
+          <option>Canon Color imageCLASS MF656Cdw</option>
+          <option>Canon PIXMA MG3620</option>
+        </optgroup>
+
+      </select>
+      <!-- </select> -->
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" />
+
+      <button type="button" onclick="previousStep()">Previous</button>
+      <button type="button" onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 3 - Order Summary -->
+    <div id="step-3" style="display: none">
+
+      <h2>Step 3: Order Summary</h2>
+
+      <table id="summary-table" style="display: block;">
+        <tr>
+          <td>Name:</td>
+          <td id="summary-name"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td id="summary-email"></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td id="summary-address"></td>
+        </tr>
+        <tr>
+          <td>Printer Model:</td>
+          <td id="summary-printer-model"></td>
+        </tr>
+        <tr>
+          <td>Quantity:</td>
+          <td id="summary-quantity"></td>
+        </tr>
+      </table>
+
+      <button type="button" onclick="previousStep()">Previous</button>
+      <button type="submit" id="purchase">Purchase</button>
+    </div>
+  </form>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="./images/logoicon.jpg">
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f fb"></i>
+          <i class="fab fa-instagram ig"></i>
+          <i class="fab fa-twitter twt"></i>
+          <i class="fab fa-pinterest-p pt"></i>
+          <i class="fab fa-youtube yt"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>Contact</h4>
+      <p>
+        <srong>Address:</srong> Dulari, Street 32, Itahari
+      </p>
+      <p><strong>Phone:</strong> +977-9812345678 / +977-9887654321</p>
+
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="aboutus.html">About us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+
+    </div>
+
+    <div class="col">
+      <h4>Account</h4>
+      <a href="signin.html">Sign In</a>
+      <a href="cart.html">Veiw cart</a>
+      <a href="#">My order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy PRINTHUB, INC. PRINT THE BETTER ONE</p>
+    </div>
+
+  </footer>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

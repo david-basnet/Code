@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tags for index page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>PRINTER OF DIFFERENT KINDS | PRINTHUB ® OFFICIAL SITE</title>
+    <!--link to CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--CSS styles for designing home page-->
+<style>
+    #content {
+        background-image: url("./images/printer.jpg");
+        height: 80vh;
+        width: 100%;
+        background-position: top 25% right 0;
+        background-size: cover;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #content h4 {
+        padding-bottom: 15px;
+    }
+
+    #content h2 {
+        color: green;
+    }
+
+    #content p {
+        color: grey;
+    }
+
+    #content button {
+        background-color: green;
+        color: white;
+        border: 10px;
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
+        background-repeat: no-repeat;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    #feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #feature .feature-box {
+        width: 250px;
+        height: 320px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 15px 0;
+    }
+
+    #feature .feature-box:hover {
+        box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    }
+
+    #feature .feature-box img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #feature .feature-box h3 {
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #088178;
+        background-color: #86ed94;
+    }
+
+    #product1 {
+        text-align: center;
+    }
+
+    #product1 .procont {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+    #product1 .pro:hover {
+        box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    #product1 .pro img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #product1 .pro .des {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    #product1 .pro .des span {
+        color: blue;
+        font-size: 19px;
+    }
+
+    #product1 .pro .des h5 {
+        padding-top: 7px;
+        color: #1a1a1a;
+        font-size: 14px;
+    }
+
+    #product1 .pro .des h4 {
+        padding-top: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        color: blue;
+    }
+
+    #product1 .pro .cart {
+        color: black;
+        bottom: 20px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .star {
+        color: orange;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(./images/banner.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #banner h4 {
+        color: white;
+        font-size: 16px;
+    }
+
+    #banner h2 {
+        color: white;
+        font-size: 45px;
+        padding: 10px 0px;
+    }
+
+    #banner h2 span {
+        color: black;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    #banner button:hover {
+        background: #86ed94;
+        color: white;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    #sdbanner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #sdbanner .banner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./images/hp\ banner.jpeg);
+        min-width: 660px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+
+    #sdbanner .banner-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./images/hp\ banner\ 2.jpeg);
+        min-width: 660px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+
+    #sdbanner h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #sdbanner h2 {
+        color: white;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    #sdbanner span {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+
+    #banner2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+    }
+
+    #banner2 .banner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./images/bannner2a.jpeg);
+        min-width: 660px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #banner2 .banner-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./images/banner2b.jpg);
+        min-width: 660px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #banner2 .banner-box h2 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    #banner2 .banner-box2 h2 {
+        color: black;
+        font-weight: 900;
+        font-size: 22px;
+    }
+
+    #banner2 h3 {
+        color: red;
+        font-weight: 800;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <!--Header Section-->
+    <section id="header">
+        <a href="#"><img src="./images/logoicon.jpg" class="logo"></a>
+
+        <header class="head">
+            <b>
+                <h1>WELCOME TO PRINTHUB</h1>
+            </b>
+            <p>"QUALITY FIRST, CUSTOMER ALWAYS"</p>
+        </header>
+
+        <div>
+            <!--unordered list for webpages-->
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="content">
+        <h4>20% OFF</h4>
+        <h3>SUPER DEAL</h2>
+            <h2>ON ALL PRODUCTS</h1>
+                <p>SAVE MORE EARN QUALITY</p>
+                <!--direct link to explore page-->
+                <a href="explore.html"><button>SHOP NOW</button></a>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="feature-box">
+            <img src="./images/freedelivery.jpg" alt="">
+            <h3>Free Shipping</h3>
+        </div>
+        <div class="feature-box">
+            <img src="./images/order.jpeg" alt="">
+            <h3>Order Online</h3>
+        </div>
+        <div class="feature-box">
+            <img src="./images/promotion.jpg" alt="">
+            <h3>Promotions</h3>
+        </div>
+        <div class="feature-box">
+            <img src="./images/savemoney.jpg" alt="">
+            <h3>Save Money</h3>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Winter offer</p>
+        <div class="procont">
+            <div class="pro">
+                <a href="explore.html"><img src="./images/ET-5850.jpg"></a>
+                <div class="des">
+                    <span>EPSON</span>
+                    <h5> ECOTANK PRO ET-5850</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$749.99</del> $599.99</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/HPColorLaserJetProMFPM283fdw.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>Color LASERJET PRO MFP M283fdw</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$429.00</del> $343.20</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/officejetpro8025.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5> OFFICEJET PRO 8025e </h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="far fa-star color"></i>
+                    </div>
+                    <h4><strike>$279.99</strike> $223.99</h4>
+                </div>
+                <!--direct link to Cart page-->
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/BrotherHL-L2350DW.jpeg"></a>
+                <div class="des">
+                    <span>BROTHER</span>
+                    <h5>HL-L2350DW</h5>
+                    <div class="star">
+                        <!--rating stars-->
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$130</del> $104</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/OFFICEJETPRO9015E.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>OFFICEJET PRO 9015e</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4><del>$199.99</del> $159.992</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/Brother MFC-J4335DW.jpg"></a>
+                <div class="des">
+                    <span>BROTHER</span>
+                    <h5>MFC-J4335DW</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4><del>179.99</del> $142.392</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/CanonColorimageCLASSMF656Cdw.jpg"></a>
+                <div class="des">
+                    <span>Canon</span>
+                    <h5>Color imageCLASS MF656Cdw</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4><del>$309.99</del> $247.20</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/PIXMAMG3620.jpeg"></a>
+                <div class="des">
+                    <span>Canon</span>
+                    <h5>PIXMA MG3620</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4><del>$54.99</del> $43.992</h4>
+                </div>
+                <a href="cart.html"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-p1">
+        <h4>PRINT YOUR IDEAS</h4>
+        <h2>Up to <span>20% Off</span> - All printers</h2>
+        <a href="explore.html"><button class="normal">EXPLORE NOW</button></a>
+    </section>
+
+    <section id="sdbanner" class="section-p1">
+        <div class="banner-box">
+            <h4>super deals</h4>
+            <h2>BUY 2 GET 1 FREE</h2>
+            <span>HP is now available with offer in only PRINTHUB</span>
+            <a href="explore.html"><button class="white">Learn More</button></a>
+        </div>
+        <div class="banner-box2">
+            <h4>best image quality</h4>
+            <h2>4K PRINT</h2>
+            <span>GET YOURSELF THIS ULTIMATE PRINTER</span>
+            <a href="cart.html"><button class="white">BUY NOW</button></a>
+        </div>
+    </section>
+
+    <section id="banner2">
+        <div class="banner-box">
+            <h2>SEASONAL SALE</h2>
+            <H3>WINTER OFFER</H3>
+        </div>
+        <div class="banner-box2">
+            <h2>BEST QUALITY PAPERS</h2>
+            <H3>GET FREE WITH A PRINTER</H3>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./images/logoicon.jpg">
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f fb"></i>
+                    <i class="fab fa-instagram ig"></i>
+                    <i class="fab fa-twitter twt"></i>
+                    <i class="fab fa-pinterest-p pt"></i>
+                    <i class="fab fa-youtube yt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Contact</h4>
+            <p>
+                <strong>Address:</strong> Dulari, Street 32, Itahari
+            </p>
+            <p><strong>Phone:</strong> +977-9812345678 / +977-9887654321</p>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+        <!--division class named col-->
+        <div class="col">
+            <h4>Account</h4>
+            <a href="signin.html">Sign In</a>
+            <a href="cart.html">Veiw cart</a>
+            <a href="#">My order</a>
+            <a href="#">Help</a>
+        </div>
+        <!--division class copyright-->
+        <div class="copyright">
+            <p>&copy PRINTHUB, INC. PRINT THE BETTER ONE</p>
+        </div>
+    </footer>
+</body>
+
+</html>

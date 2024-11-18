@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tags for explore page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINTER OF DIFFERENT KINDS | PRINTHUB ® OFFICIAL SITE</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--CSS styles for explore page-->
+<style>
+    #product1 {
+        text-align: center;
+    }
+
+    #product1 .procont {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+    #product1 .pro:hover {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    #product1 .pro img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    #product1 .pro .des {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    #product1 .pro .des span {
+        color: blue;
+        font-size: 19px;
+    }
+
+    #product1 .pro .des h5 {
+        padding-top: 7px;
+        color: #1a1a1a;
+        font-size: 14px;
+    }
+
+    #product1 .pro .des h4 {
+        padding-top: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        color: blue;
+    }
+
+    #product1 .pro .cart {
+        color: black;
+        bottom: 20px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .star .color {
+        color: orange;
+    }
+
+    #IP h3 {
+        text-align: left;
+        margin-left: -70px;
+    }
+
+    #product1 .bttn {
+        padding: 10px 25px;
+        font-family: sans-serif;
+        font-weight: 500;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    #product1 .bttn-1 {
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 1;
+        color: black;
+    }
+
+    #product1 .bttn-1:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        direction: ltr;
+        z-index: -1;
+        background: #86ed94;
+        transition: all 0.3s ease;
+    }
+
+    #product1 .bttn-1:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    #product1 .bttn-1:hover:after {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+    #product1 .bttn-1:active {
+        top: 2px;
+    }
+</style>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="./images/logoicon.jpg" class="logo"></a>
+        <!--header section-->
+        <header class="head">
+            <b>
+                <h1>WELCOME TO PRINTHUB</h1>
+            </b>
+            <p>"QUALITY FIRST, CUSTOMER ALWAYS"</p>
+        </header>
+
+        <div>
+            <ul id="navbar">
+                <!--link to all pages-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="explore.html">EXPLORE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="research.html">RESEARCH </a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+    <!--division class for printer types and rating with link to cart page-->
+    <section id="product1" class="section-p1">
+        <h2>Our Products</h2>
+        <p>Check our discounts</p>
+        <div id="IP" class="section-p1">
+            <h3>INKJET PRINTERS</h3>
+        </div>
+        <div class="procont">
+            <div class="pro">
+                <a href="explore.html"><img src="./images/envy5020.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>ENVY 5020</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>$119</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/deskjet2130.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>DESKJET 2130</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                    <h4>$49.99</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/ET-5850.jpg"></a>
+                <div class="des">
+                    <span>EPSON</span>
+                    <h5> ECOTANK PRO ET-5850</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$749.99</del> $599.99</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/officejetpro8025.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5> OFFICEJET PRO 8025e </h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4><strike>$279.99</strike> $223.99</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+        </div><br>
+        <hr width="100%">
+
+        <div id="IP" class="section-p1">
+            <h3>LASER PRINTERS</h3>
+        </div>
+        <div class="procont">
+            <div class="pro">
+                <a href="explore.html"><img src="./images/HPColorLaserJetProMFPM283fdw.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>Color LASERJET PRO MFP M283fdw</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$429.00</del> $343.20</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/BrotherHL-L2350DW.jpeg"></a>
+                <div class="des">
+                    <span>BROTHER</span>
+                    <h5>HL-L2350DW</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                    </div>
+                    <h4><del>$130</del> $104</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/MFC-L2750DW.jpeg"></a>
+                <div class="des">
+                    <span>BROTHER</span>
+                    <h5>MFC-L2750DW</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4>$288.00</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/HPlaserjetproM479fdw.jpeg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>LASERJET PRO MFP M479fdw</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4>$819.00</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+        </div><br>
+        <hr width="100%">
+
+        <div id="IP" class="section-p1">
+            <h3>ALL IN ONE PRINTERS</h3>
+        </div>
+        <div class="procont">
+            <div class="pro">
+                <a href="explore.html"><img src="./images/OFFICEJETPRO9015E.jpg"></a>
+                <div class="des">
+                    <span>HP</span>
+                    <h5>OFFICEJET PRO 9015e</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4><del>$199.99</del> $159.992</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/Brother MFC-J4335DW.jpg"></a>
+                <div class="des">
+                    <span>BROTHER</span>
+                    <h5>MFC-J4335DW</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                    </div>
+                    <h4><del>179.99</del> $142.392</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/CanonColorimageCLASSMF656Cdw.jpg"></a>
+                <div class="des">
+                    <span>Canon</span>
+                    <h5>Color imageCLASS MF656Cdw</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4><del>$309.99</del> $247.20</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="explore.html"><img src="./images/PIXMAMG3620.jpeg"></a>
+                <div class="des">
+                    <span>Canon</span>
+                    <h5>PIXMA MG3620</h5>
+                    <div class="star">
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star color"></i>
+                        <i class="fas fa-star-half-alt color"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4><del>$54.99</del> $43.992</h4>
+                </div>
+                <a href="cart.html"><button class="bttn bttn-1">BUY NOW</button>
+                </a>
+            </div>
+        </div><br>
+        <hr width="100%">
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./images/logoicon.jpg">
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f fb"></i>
+                    <i class="fab fa-instagram ig"></i>
+                    <i class="fab fa-twitter twt"></i>
+                    <i class="fab fa-pinterest-p pt"></i>
+                    <i class="fab fa-youtube yt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Contact</h4>
+            <p>
+                <srong>Address:</srong> Dulari, Street 32, Itahari
+            </p>
+            <p><strong>Phone:</strong> +977-9812345678 / +977-9887654321</p>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="signin.html">Sign In</a>
+            <a href="cart.html">Veiw cart</a>
+            <a href="#">My order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy PRINTHUB, INC. PRINT THE BETTER ONE</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

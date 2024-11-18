@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tags for research page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINTER OF DIFFERENT KINDS | PRINTHUB ® OFFICIAL SITE</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--CSS for research page-->
+<style>
+    #contactform {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        padding: 80px;
+        border: 1px solid #e1e1e1;
+    }
+
+    #contactform form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contactform form span {
+        font-size: 13px;
+    }
+
+    #contactform form h2 {
+        font-size: 26px;
+        line-height: 35px;
+        padding: 20px 0;
+    }
+
+    #contactform form input,
+    #contactform form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        outline: none;
+        margin-bottom: 20px;
+        border: 1px solid #e1e1e1;
+    }
+
+    .bttnS {
+        display: inline-block;
+        padding: 0.9em 1.9em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgba(255, 255, 255, 0);
+        background-color: rgb(80, 10, 172);
+        border-radius: 2em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        text-align: center;
+        transition: all 0.1s;
+    }
+
+    .bttnS:hover {
+        border-color: rgb(255, 255, 255);
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .wewill {
+        width: 450px;
+    }
+
+    .photo p {
+        text-align: center;
+    }
+
+    #compare {
+        padding: 100px 100px 20px 100px;
+    }
+
+    #compare .researchbox {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    #compare .details {
+        width: 50%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #compare .details a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
+
+    #compare img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popup {
+        width: 400px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+
+    .open-popup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup h2 {
+        font-size: 38px;
+        font-style: 500;
+        margin: 30px 0 10px;
+    }
+</style>
+
+<body>
+    <!--header section-->
+    <section id="header">
+        <a href="#"><img src="./images/logoicon.jpg" class="logo"></a>
+
+        <header class="head">
+            <b>
+                <h1>WELCOME TO PRINTHUB</h1>
+            </b>
+            <p>"QUALITY FIRST, CUSTOMER ALWAYS"</p>
+        </header>
+
+        <div>
+            <!--division class for page link-->
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a class="active" href="research.html">RESEARCH </a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="compare">
+        <div class="researchbox">
+            <div>
+                <img src="./images/research1.png">
+            </div>
+            <div class="details">
+                <h3><a href="index.html">Home page</a></h3>
+                <p>This is Home page of HP. As we compare it with our Home page we can clearly see that our home is more
+                    friendly. In our home page we have promoted all sorts of features more than the HP's Home page
+                </p>
+                <a style="color: blue;"
+                    href="https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops/pavilion-laptops.html?jumpid=ps_d19ef0f160&gad_source=1&gclid=CjwKCAiAtt2tBhBDEiwALZuhAD7ZbwrFL3ALlr3zlyk-FARWDuzo0eoRXnJM8yxBiNzpkakODjWzXBoCWVUQAvD_BwE&gclsrc=aw.ds">Go
+                    to HP</a>
+            </div>
+        </div><br>
+
+        <div class="researchbox">
+
+            <div class="details">
+                <h3><a href="explore.html"> Explore section</a></h3>
+                <p>This is Explore or Product page of Brother. As we compare it with our Explore page we can clearly see
+                    that our explore page is more defined. Our explore page has more details and features comparatively.
+                </p>
+                <a style="color:blue" href="https://www.brother.in/en/products/all-printers">Go to Brother.in</a>
+            </div>
+            <div>
+                <img src="./images/research2.png">
+            </div>
+        </div><br>
+
+        <div class="researchbox">
+            <div>
+                <img src="./images/Blog Page.png">
+            </div>
+            <div class="details">
+                <h3><a href="blog.html"> Blog page</a></h3>
+                <p>This is Blog page of Brother. As we compare it with our Blog page we can clearly see that our blog
+                    page is easy to understand.
+                </p>
+                <a style="color:blue" href="https://www.brother.in/en/products/all-printers">Go to Brother.in</a>
+            </div>
+        </div><br>
+    </section>
+
+    <section id="contactform">
+        <form action="" onsubmit="form()">
+            <span>Leave a message</span>
+            <h2>We will love to hear you.</h2>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <label for="contact">Contact no: </label>
+            <input type="contact" id="contact" name="contact" placeholder="Contact number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4" placeholder="Comment" required></textarea>
+            <button class="bttnS bttnS1">Submit</button>
+        </form>
+
+        <div class="photo">
+            <div>
+                <img class="wewill" src="./images/aboutusIMG.jpg">
+                <p>We will <span>help</span> you. <br> Phone: +977 982345678 <br> Email: printhubofficial@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./images/logoicon.jpg">
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f fb"></i>
+                    <i class="fab fa-instagram ig"></i>
+                    <i class="fab fa-twitter twt"></i>
+                    <i class="fab fa-pinterest-p pt"></i>
+                    <i class="fab fa-youtube yt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Contact</h4>
+            <p>
+                <srong>Address:</srong> Dulari, Street 32, Itahari
+            </p>
+            <p><strong>Phone:</strong> +977-9812345678 / +977-9887654321</p>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="signin.html">Sign In</a>
+            <a href="cart.html">Veiw cart</a>
+            <a href="#">My order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy PRINTHUB, INC. PRINT THE BETTER ONE</p>
+        </div>
+
+    </footer>
+    <!--creating form to insert name and email-->
+    <script>
+        function form() {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            //if value is null then given alert message will be dislayed    
+            if (name.value == "" || email.value == "") {
+                alert("*fill the form");
+            }
+            //pop-up meassage after filling the form
+            else {
+                alert("Thank you for your concerns.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
